@@ -23,7 +23,7 @@ function EventsPage() {
               key={ride._id}
               className="bg-white rounded-lg shadow-md overflow-hidden"
             >
-              <div className="relative h-48">
+              <div className="relative">
                 <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                   {ride.distance} km
                 </div>
