@@ -19,13 +19,11 @@ function EventsPage() {
           <p className="text-gray-600">No upcoming rides available.</p>
         ) : (
           rides.map((ride) => (
-            <div key={ride._id} className="bg-white rounded-lg shadow-md overflow-hidden">
+            <div
+              key={ride._id}
+              className="bg-white rounded-lg shadow-md overflow-hidden"
+            >
               <div className="relative h-48">
-                <img 
-                  src="https://via.placeholder.com/500" // Default image
-                  alt={ride.ride_name}
-                  className="w-full h-full object-cover"
-                />
                 <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm">
                   {ride.distance} km
                 </div>
@@ -40,7 +38,9 @@ function EventsPage() {
                   {ride.start_location} to {ride.end_location}
                 </p>
                 <div className="flex items-center justify-between">
-                  <span className="text-sm text-gray-500">Organized by: {ride.organizer_id}</span>
+                  <span className="text-sm text-gray-500">
+                    Organized by: {ride.organizer_id}
+                  </span>
                   <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
                     Register Now
                   </button>
